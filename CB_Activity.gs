@@ -4,6 +4,10 @@ Also, in the Sheet in cell I1 I put =NOW() and in I2 I put this to calculate how
 
 =ARRAYFORMULA(IF(LEN(A2:A);DATEDIF(E2:E;I1;"D");))
 
+If you replace new Date(device.lastSync) with only device.lastSync you will get the full text string in the Last sync column, instead of a date object.
+Then you need to re-write the formula in I2, to only include the beginning of the date value in the calculation.
+This formula will do that. =ARRAYFORMULA(IF(LEN(A2:A);DATEDIF(LEFT(E2:E;10);I1;"D");))
+
 I then colour code that with conditional formatting to differentiate between recently used devices and stale devices.
 */
 function listCrOS()
