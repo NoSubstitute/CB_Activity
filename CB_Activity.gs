@@ -21,6 +21,9 @@ for (i = 0; i < devices.length; i++) {
  if(device.recentUsers !== undefined)
  {
    deviceArray.push([device.orgUnitPath, device.serialNumber, device.osVersion, device.recentUsers[0].email, new Date(device.lastSync), device.status, device.macAddress, device.autoUpdateExpiration]);
+  // If you replace new Date(device.lastSync) with only device.lastSync you will get the full text string in the Last sync column, instead of a date object.
+  // Then you need to re-write the formula in I2, to only include the beginning of the date value in the calculation.
+  // This formula will do that. =ARRAYFORMULA(IF(LEN(A2:A);DATEDIF(LEFT(E2:E;10);I1;"D");))
  }
 }
 }
