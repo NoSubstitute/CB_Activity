@@ -1,5 +1,5 @@
 # CB_Activity
-Auto-updated Google Sheet of Chromebooks in your organisation with most recent user and MAC-address
+Auto-updated Google Sheet of Chromebooks in your organisation with most recent user, MAC-address and AUE
 
 # Check the wiki for how to use it!
 https://github.com/NoSubstitute/CB_Activity/wiki
