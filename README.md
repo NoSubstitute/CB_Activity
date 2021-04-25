@@ -1,9 +1,9 @@
 # CB_Activity
 Auto-updated Google Sheet of Chromebooks in your organisation with most recent user, MAC-address and AUE
 
-# Check the wiki for how to use it!
+## Check the wiki for how to use it!
 https://github.com/NoSubstitute/CB_Activity/wiki
-# If you have more than 30k devices you should go directly here.
+## If you have more than 30k devices you should go directly here.
 [To avoid timeouts](https://github.com/NoSubstitute/CB_Activity/wiki/Getting-timeouts%3F)
 
 
